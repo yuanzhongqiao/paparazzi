@@ -1,86 +1,70 @@
-# MAIN README
-
-Paparazzi UAS
-=============
-[![Build Status](https://paparazziuav.semaphoreci.com/badges/paparazzi/branches/master.svg?style=shields&key=d3a59143-a357-434e-89b8-057f15ed8dd2)](https://paparazziuav.semaphoreci.com/projects/paparazzi) [![Gitter chat](https://badges.gitter.im/paparazzi/discuss.svg)](https://gitter.im/paparazzi/discuss)
-<a href="https://scan.coverity.com/projects/paparazzi-paparazzi">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/4928/badge.svg"/>
-</a>
-
-Paparazzi is a free open source software package for Unmanned (Air) Vehicle Systems.
-For many years, the system has been used successfuly by hobbyists, universities and companies all over the world, on vehicles of various sizes (11.9g to 25kg).
-Paparazzi supports fixed wing, rotorcraft, hybrids, flapping vehicles and it is even possible to use it for boats and surface vehicles.
-
-Documentation is available here https://paparazzi-uav.readthedocs.io/en/latest/
-
-More docs is also available on the wiki http://wiki.paparazziuav.org
-
-To get in touch, subscribe to the mailing list [paparazzi-devel@nongnu.org] (http://savannah.nongnu.org/mail/?group=paparazzi), the IRC channel (freenode, #paparazzi) and Gitter (https://gitter.im/paparazzi/discuss).
-
-Required software
------------------
-
-Instructions for installation can be found on the wiki (http://wiki.paparazziuav.org/wiki/Installation).
-
-Quick start:
-
-```
-git clone https://github.com/paparazzi/paparazzi.git
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要自述文件</font></font></h1><a id="user-content-main-readme" class="anchor" aria-label="永久链接：主要自述文件" href="#main-readme"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">狗仔队无人机</font></font></h1><a id="user-content-paparazzi-uas" class="anchor" aria-label="永久链接：狗仔队无人机" href="#paparazzi-uas"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://paparazziuav.semaphoreci.com/projects/paparazzi" rel="nofollow"><img src="https://camo.githubusercontent.com/628d5441e17a988f97b1839f903696623469dc322261283149399f92e38868ff/68747470733a2f2f7061706172617a7a697561762e73656d6170686f726563692e636f6d2f6261646765732f7061706172617a7a692f6272616e636865732f6d61737465722e7376673f7374796c653d736869656c6473266b65793d64336135393134332d613335372d343334652d383962382d303537663135656438646432" alt="构建状态" data-canonical-src="https://paparazziuav.semaphoreci.com/badges/paparazzi/branches/master.svg?style=shields&amp;key=d3a59143-a357-434e-89b8-057f15ed8dd2" style="max-width: 100%;"></a> <a href="https://gitter.im/paparazzi/discuss" rel="nofollow"><img src="https://camo.githubusercontent.com/b153090e3e466eb5c7869c0b492a2796db77b70c768a314a3341f739ced45bda/68747470733a2f2f6261646765732e6769747465722e696d2f7061706172617a7a692f646973637573732e737667" alt="吉特聊天" data-canonical-src="https://badges.gitter.im/paparazzi/discuss.svg" style="max-width: 100%;"></a>
+<a href="https://scan.coverity.com/projects/paparazzi-paparazzi" rel="nofollow">
+<img alt="Coverity 扫描构建状态" src="https://camo.githubusercontent.com/aaf75754c5b84d5010c4b023ec030336b5cc5c4e62a47a0f0840b156286b8606/68747470733a2f2f7363616e2e636f7665726974792e636f6d2f70726f6a656374732f343932382f62616467652e737667" data-canonical-src="https://scan.coverity.com/projects/4928/badge.svg" style="max-width: 100%;">
+</a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paparazzi 是一个用于无人机系统的免费开源软件包。</font><font style="vertical-align: inherit;">多年来，该系统已被世界各地的爱好者、大学和公司成功应用于各种尺寸（11.9 克至 25 公斤）的车辆上。</font><font style="vertical-align: inherit;">狗仔队支持固定翼、旋翼机、混合动力、扑翼飞行器，甚至可以将其用于船只和水面车辆。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档可在此处获取</font></font><a href="https://paparazzi-uav.readthedocs.io/en/latest/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://paparazzi-uav.readthedocs.io/en/latest/</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多文档也可以在 wiki </font></font><a href="http://wiki.paparazziuav.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://wiki.paparazziuav.org上找到</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要取得联系，请订阅邮件列表 [ </font></font><a href="mailto:paparazzi-devel@nongnu.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">paparazzi-devel@nongnu.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ] ( </font></font><a href="http://savannah.nongnu.org/mail/?group=paparazzi" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://savannah.nongnu.org/mail/?group=paparazzi)、IRC</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">频道 (freenode、#paparazzi) 和 Gitter ( </font></font><a href="https://gitter.im/paparazzi/discuss" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://gitter.im/paparazzi/discuss</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所需软件</font></font></h2><a id="user-content-required-software" class="anchor" aria-label="永久链接：所需软件" href="#required-software"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装说明可以在 wiki ( </font></font><a href="http://wiki.paparazziuav.org/wiki/Installation" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://wiki.paparazziuav.org/wiki/Installation</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) 上找到。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>git clone https://github.com/paparazzi/paparazzi.git
 cd ./paparazzi
 ./install.sh
-```
-
-
-
-For Ubuntu users, required packages are available in the [paparazzi-uav PPA] (https://launchpad.net/~paparazzi-uav/+archive/ppa),
-Debian users can use the [OpenSUSE Build Service repository] (http://download.opensuse.org/repositories/home:/flixr:/paparazzi-uav/Debian_7.0/)
-
-Debian/Ubuntu packages:
-- **paparazzi-dev** is the meta-package on which the Paparazzi software depends to compile and run the ground segment and simulator.
-- **paparazzi-jsbsim** is needed for using JSBSim as flight dynamics model for the simulator.
-
-Recommended cross compiling toolchain: https://launchpad.net/gcc-arm-embedded
-
-
-Directories quick and dirty description:
-----------------------------------------
-
-_conf_: the configuration directory (airframe, radio, ... descriptions).
-
-_data_: where to put read-only data (e.g. maps, terrain elevation files, icons)
-
-_doc_: documentation (diagrams, manual source files, ...)
-
-_sw_: software (onboard, ground station, simulation, ...)
-
-_var_: products of compilation, cache for the map tiles, ...
-
-
-Compilation and demo simulation
--------------------------------
-
-1. type "make" in the top directory to compile all the libraries and tools.
-
-2. "./paparazzi" to run the Paparazzi Center
-
-3. Select the "Bixler" aircraft in the upper-left A/C combo box.
-  Select "sim" from upper-middle "target" combo box. Click "Build".
-  When the compilation is finished, select "Simulation" in Operation tab and click "Start Session".
-
-4. In the GCS, wait about 10s for the aircraft to be in the "Holding point" navigation block.
-  Switch to the "Takeoff" block (lower-left blue airway button in the strip).
-  Takeoff with the green launch button.
-
-Uploading the embedded software
-----------------------------------
-
-1. Power the flight controller board while it is connected to the PC with the USB cable.
-
-2. From the Paparazzi center, select the "ap" target, and click "Upload".
-
-
-Flight
-------
-
-1.  From the Paparazzi Center, select the flight session and ... do the same as in simulation !
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/paparazzi/paparazzi.git
+cd ./paparazzi
+./install.sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 Ubuntu 用户，所需的软件包可在 [paparazzi-uav PPA] ( </font></font><a href="https://launchpad.net/~paparazzi-uav/+archive/ppa" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://launchpad.net/~paparazzi-uav/+archive/ppa</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) 中找到，Debian 用户可以使用 [OpenSUSE Build Service 存储库] ( </font></font><a href="http://download.opensuse.org/repositories/home:/flixr:/paparazzi-uav/Debian_7.0/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http: //download.opensuse.org/repositories/home:/flixr:/paparazzi-uav/Debian_7.0/</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Debian/Ubuntu 软件包：</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">paparazzi-dev</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是 Paparazzi 软件用来编译和运行地面段和模拟器的元包。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 JSBSim 作为模拟器的飞行动力学模型需要</font><strong><font style="vertical-align: inherit;">paparazzi-jsbsim 。</font></strong></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推荐交叉编译工具链：</font></font><a href="https://launchpad.net/gcc-arm-embedded" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://launchpad.net/gcc-arm-embedded</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录快速和肮脏的描述：</font></font></h2><a id="user-content-directories-quick-and-dirty-description" class="anchor" aria-label="永久链接：目录快速而肮脏的描述：" href="#directories-quick-and-dirty-description"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">conf</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：配置目录（机身、无线电……描述）。</font></font></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">data</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：放置只读数据的位置（例如地图、地形高程文件、图标）</font></font></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">doc</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：文档（图表、手册源文件...）</font></font></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sw</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：软件（机载、地面站、模拟……）</font></font></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">var</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：编译的产品，地图图块的缓存，...</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编译和demo模拟</font></font></h2><a id="user-content-compilation-and-demo-simulation" class="anchor" aria-label="永久链接：编译和演示模拟" href="#compilation-and-demo-simulation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在顶层目录中输入“make”来编译所有库和工具。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“./paparazzi” 经营狗仔队中心</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在左上角的 A/C 组合框中选择“Bixler”飞机。</font><font style="vertical-align: inherit;">从中上部的“目标”组合框中选择“sim”。</font><font style="vertical-align: inherit;">单击“构建”。</font><font style="vertical-align: inherit;">编译完成后，在“Operation”选项卡中选择“Simulation”，然后单击“Start Session”。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 GCS 中，等待约 10 秒，让飞机进入“等待点”导航区块。</font><font style="vertical-align: inherit;">切换到“起飞”块（条中左下蓝色气道按钮）。</font><font style="vertical-align: inherit;">使用绿色发射按钮起飞。</font></font></p>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上传嵌入式软件</font></font></h2><a id="user-content-uploading-the-embedded-software" class="anchor" aria-label="永久链接：上传嵌入式软件" href="#uploading-the-embedded-software"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 USB 线将飞控板连接至 PC，为飞控板供电。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从狗仔队中心，选择“ap”目标，然后单击“上传”。</font></font></p>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">航班</font></font></h2><a id="user-content-flight" class="anchor" aria-label="永久链接： 飞行" href="#flight"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从狗仔队中心，选择飞行会话并...执行与模拟中相同的操作！</font></font></li>
+</ol>
+</article></div>
